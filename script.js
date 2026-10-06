@@ -8,20 +8,34 @@
 const navToggle = document.getElementById("navToggle"); // the hamburger button
 const navLinks = document.getElementById("navLinks");   // the list of links
 
+// Helper: closes the menu and resets the button state
+function closeMenu() {
+  navLinks.classList.remove("open");
+  navToggle.setAttribute("aria-expanded", "false");
+}
+
+// Hamburger button: opens or closes the menu
 navToggle.addEventListener("click", () => {
-  // Show or hide the menu and keep the button's aria state in sync for screen readers
   const isOpen = navLinks.classList.toggle("open");
   navToggle.setAttribute("aria-expanded", isOpen);
 });
 
-// Close the menu after a link is tapped (so it doesn't stay over the page)
+// Close the menu when ANY link inside it is clicked (including "Let's talk")
 navLinks.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    navLinks.classList.remove("open");
-    navToggle.setAttribute("aria-expanded", "false");
-  });
+  link.addEventListener("click", closeMenu);
 });
 
+// Close the menu when you tap anywhere outside the menu or hamburger button
+document.addEventListener("click", (event) => {
+  if (!navLinks.contains(event.target) && !navToggle.contains(event.target)) {
+    closeMenu();
+  }
+});
+
+// Close the menu when the Escape key is pressed
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape") closeMenu();
+});
 /* ---------- 2. HEADER BORDER ON SCROLL ---------- */
 const header = document.querySelector(".site-header");
 window.addEventListener("scroll", () => {
