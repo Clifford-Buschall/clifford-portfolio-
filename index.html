@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!-- Language is set to English so browsers and screen readers read the page correctly -->
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Makes the layout scale properly on phones and tablets -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clifford Buschall | Graphic, UI/UX & Web Designer in Mozano</title>
+  <meta name="description" content="Portfolio of Clifford Buschall, a graphic designer in Mozano, Ghana, moving into UI/UX and web design." />
+
+  <!-- Fonts: Sora for headings, Manrope for body text (fallbacks are set in the CSS) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&family=Sora:wght@500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Your styles live in style.css -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER / NAVIGATION ===== -->
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Main">
+      <a href="#top" class="logo">Clifford Buschall<span class="logo-dot">.</span></a>
+
+      <!-- Menu button: only visible on small screens (see CSS) -->
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <!-- Page links. The JS highlights the one for the section you're viewing -->
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#top">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#contact" class="btn btn-primary btn-small">Let's talk</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section class="hero container">
+      <div class="hero-card">
+        <div class="hero-text">
+          <p class="hero-tag">Mozano, Ghana</p>
+          <h1>I design things people notice, then make them work on screen.</h1>
+          <p class="hero-lead">
+            I'm Clifford Buschall, a graphic designer who now builds interfaces and websites too.
+            From flyers to app screens, I keep the work clean and clear.
+          </p>
+          <div class="hero-actions">
+            <a href="#work" class="btn btn-primary">View my work</a>
+            <!-- Put your CV file next to index.html and keep this file name (or change it) -->
+            <a href="CLIFFORD_BUSCHALL_CV.pdf" class="btn btn-outline" download>Download CV</a>
+          </div>
+        </div>
+
+        <!-- PHOTO AREA: replace the <div class="photo-placeholder"> with
+             <img src="your-photo.jpg" alt="Clifford Buschall" /> when you have a photo -->
+        <div class="hero-photo">
+          <div class="photo-ring">
+            <img src="Images/clifford.jpg" alt="Clifford Buschall" />
+          </div>
+          <!-- Small floating tags around the photo (decorative) -->
+          <span class="float-chip chip-design">Design</span>
+          <span class="float-chip chip-code">&lt;/&gt; Code</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ABOUT ===== (personal story and quick facts only) -->
+    <section class="section container" id="about">
+      <div class="about-grid">
+        <div>
+          <h2>About me</h2>
+          <p>
+            I'm a creative person who enjoys turning ideas into visuals. I started out in graphic design,
+            and I've since studied web design too, so I can take a project from the first sketch to a working page.
+          </p>
+          <p>
+            I work well alone or in a team, I listen to what clients need, and I like learning new skills.
+            My goal is to keep growing as a designer and earn more through the value of my work.
+          </p>
+        </div>
+        <!-- Quick facts card -->
+        <ul class="facts-card">
+          <li><strong>Based in</strong> Mozano, Ghana</li>
+          <li><strong>Languages</strong> English, Akan</li>
+          <li><strong>Off the clock</strong> Music and gaming</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section container" id="experience">
+  <h2>Work experience</h2>
+
+  <!-- Job 1 -->
+  <article class="exp-card">
+    <div class="exp-top">
+      <div>
+        <h3>Graphic Designer</h3>
+        <p class="exp-place">Motive Krative Agency, Gomoa Eshiem</p>
+      </div>
+      <!-- <span class="exp-badge">Current role</span> -->
+    </div>
+    <ul class="exp-list">
+      <li>Designed print materials including flyers, banners, posters and business cards.</li>
+      <li>Prepared files for professional printing, checking colours and layouts.</li>
+      <li>Worked with clients to understand what they needed and delivered quality results.</li>
+      <li>Handled revisions and met tight deadlines.</li>
+    </ul>
+  </article>
+
+  <!-- Job 2 -->
+  <article class="exp-card">
+    <div class="exp-top">
+      <div>
+        <h3>Printing &amp; Typing Assistant</h3>
+        <p class="exp-place">Bethel Cafe, Takoradi-Anaji</p>
+      </div>
+      <!-- <span class="exp-badge">2020 – 2022</span> -->
+    </div>
+    <ul class="exp-list">
+      <li>Printed documents and other materials for customers.</li>
+      <li>Typed letters, forms and other documents.</li>
+      <li>Served customers and kept their jobs accurate and on time.</li>
+      <li>Helped with simple design work for customers.</li>
+    </ul>
+  </article>
+    </section>
+
+    <!-- ===== EDUCATION ===== (its own section: what I've studied) -->
+    <section class="section container" id="education">
+      <h2>Education</h2>
+      <div class="edu-grid">
+        <article class="edu-card">
+          <span class="edu-year">2024 – 2025</span>
+          <h3>Graphic &amp; Web Design</h3>
+          <p>IPMC University College</p>
+        </article>
+        <article class="edu-card">
+          <span class="edu-year">2019 – 2022</span>
+          <h3>BSIT (Business Study Information Technology)</h3>
+          <p>Akwatia Technical Institute</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section class="section container" id="services">
+      <h2>What I can do for you</h2>
+      <div class="services-grid">
+        <article class="card">
+          <div class="icon icon-blue">Aa</div>
+          <h3>Graphic design</h3>
+          <p>Logos, flyers, posters, banners and business cards, prepared properly so they print the way they look on screen.</p>
+        </article>
+        <article class="card">
+          <div class="icon icon-green">&lt;/&gt;</div>
+          <h3>Web design (basics)</h3>
+          <p>Simple, responsive websites built with HTML and CSS that look good on a phone and on a laptop.</p>
+        </article>
+        <article class="card">
+          <div class="icon icon-violet">UX</div>
+          <h3>UI/UX design</h3>
+          <p>App and website screens designed in Adobe XD, with a focus on making things easy to find and use.</p>
+        </article>
+      </div>
+
+      <!-- Tools, grouped by what they're used for -->
+      <div class="tools">
+        <h3>Tools I use</h3>
+        <ul class="chips">
+          <li>Photoshop</li>
+          <li>Illustrator</li>
+          <li>InDesign</li>
+          <li>Adobe XD</li>
+          <li>Figma</li>
+          <li>HTML</li>
+          <li>CSS</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== WORK / PORTFOLIO ===== -->
+    <section class="section container" id="work">
+      <div class="section-head">
+        <h2>Selected work</h2>
+        <!-- Filter buttons: the JS shows/hides cards using each card's data-category -->
+        <div class="filters" role="group" aria-label="Filter projects">
+          <button class="filter active" data-filter="all">All</button>
+          <button class="filter" data-filter="graphic">Graphic</button>
+          <button class="filter" data-filter="web">Web</button>
+          <button class="filter" data-filter="uiux">UI/UX</button>
+        </div>
+      </div>
+
+      <!-- TO ADD YOUR OWN WORK: replace each <div class="thumb"> with <img src="your-image.jpg" alt="..." />
+           and update the title and text. Copy a whole <article> to add more projects. -->
+      <div class="work-grid" id="workGrid">
+        <article class="project" data-category="graphic">
+    <div class="thumb thumb-d">
+        <img src="Images/Graphic-design/20260514_153354.png" 
+             alt="Business flyer  Design"></div>
+    <h3>Business flyer design</h3>
+    <p>Graphic Design</p>
+        </article>
+        <article class="project" data-category="web">
+          <div class="thumb thumb-b"><img src="Images/Web-design/web01.jpg" alt="Restaurantwebsite"></div>
+          <h3>Restaurant website</h3>
+          <p>Web design</p>
+        </article>
+        <article class="project" data-category="uiux">
+          <div class="thumb thumb-c"></div>
+          <h3>Mobile app screens</h3>
+          <p>UI/UX design</p>
+        </article>
+        <article class="project" data-category="graphic">
+    <div class="thumb thumb-d">
+        <img src="Images/Graphic-design/20260824_223650.png"
+             alt="Church Flyer Design"></div>
+    <h3>Church flyer design</h3>
+    <p>Graphic Design</p>
+        </article>
+        <article class="project" data-category="graphic">
+    <div class="thumb thumb-d">
+        <img src="Images/Graphic-design/20260819_011704.png"
+             alt="Church flyer Design"></div>
+    <h3>Birthday Flyer design</h3>
+    <p>Graphic Design</p>
+        </article>
+        <article class="project" data-category="web">
+          <div class="thumb thumb-a">
+        <img src="Images/Web-design/landing-page.jpg"
+             alt="Personal landing page"></div>
+          <h3>Personal landing page</h3>
+          <p>Web design</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section container" id="contact">
+      <div class="contact-card">
+        <div>
+          <h2>Have a project in mind?</h2>
+          <p>Tell me what you need and when you need it. I'll get back to you as soon as I can.</p>
+        </div>
+
+        <!-- On submit, script.js sends this form through FormSubmit, which emails it to your inbox -->
+        <form class="form" id="contactForm">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" required />
+          <label for="email">Your email</label>
+          <input id="email" name="email" type="email" required />
+          <!-- Hidden spam trap: real visitors never see or fill this; bots do -->
+          <input type="text" name="_honey" class="honey" tabindex="-1" autocomplete="off" />
+          <label for="message">What do you need?</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note" id="formNote" role="status"></p>
+        </form>
+      </div>
+    </section>
+
+    <!-- ===== FIND ME ONLINE (icons only, last thing before the footer) =====
+         Each icon is a link. To add another account, copy one <a> block, change the
+         href, aria-label and title, and swap the <svg> for the right icon. -->
+    <div class="connect container">
+      <p class="connect-label">Find me online</p>
+      <div class="social-bar">
+
+        <!-- WhatsApp: opens a chat with your number (Ghana code 233, no leading 0) -->
+        <!-- WhatsApp: opens a chat with your number and a pre-written message -->
+<a href="https://wa.me/233598576827?text=Hi%20Clifford%2C%20I%20saw%20your%20portfolio%20and%20I%27d%20like%20to%20talk%20about%20a%20project." target="_blank" rel="noopener" aria-label="Chat on WhatsApp" title="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+    <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z" />
+    <g transform="translate(6.6 6.4) scale(0.45)"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" /></g>
+  </svg>
+</a>
+
+        <!-- Email: opens the visitor's mail app -->
+        <a href="mailto:cliffordbuschall16@gmail.com" aria-label="Send an email" title="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="4" width="20" height="16" rx="3" />
+            <path d="m3 7 9 6 9-6" />
+          </svg>
+        </a>
+
+        <!-- EXAMPLE of another account (remove the comment marks and add your real link):
+        <a href="https://instagram.com/YOUR_HANDLE" target="_blank" rel="noopener" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="2" y="2" width="20" height="20" rx="5" />
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+          </svg>
+        </a>
+        -->
+      </div>
+    </div>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer container">
+    <p>&copy; <span id="year"></span> Clifford Buschall</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <!-- Your behaviour code lives in script.js -->
+  <script src="script.js"></script>
+</body>
+</html>
