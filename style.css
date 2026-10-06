@@ -160,6 +160,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .exp-card {
   padding: clamp(1.5rem, 4vw, 2.2rem); background: var(--panel);
   border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: var(--radius);
+  margin-top: 1.2rem;
 }
 .exp-top { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.8rem; margin-bottom: 1.2rem; }
 .exp-top h3 { font-size: 1.3rem; }
@@ -240,7 +241,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .form input, .form textarea {
   width: 100%; padding: 0.8rem 1rem; border-radius: 10px; margin-bottom: 0.6rem;
   background: var(--panel-2); border: 1px solid var(--line);
-  color: var(--text); font-family: inherit; font-size: 1rem; resize: vertical;
+  color: var(--text); font-family: inherit; font-size: 1rem; resize: vertical; resize: none;
 }
 .form .btn { justify-self: start; }
 .form-note { min-height: 1.4em; font-size: 0.9rem; color: var(--green); }
